@@ -9,7 +9,7 @@ if 'transaction' not in st.session_state:
 with st.form("transaction_form"):
      date= st.date_input("Date")
      description = st.text_input("Description")
-     category = st.selectbox("Category,["Income","Food", "Rent","Entertainment", "Other"])
+     category = st.selectbox("Category,["Income","Food", "Rent","Utilities","Entertainment", "Other"])
      amount =st.number-input("Amount", step=0.01)
      submitted = st.form_submit_button("Add Transaction")
      if submitted:
