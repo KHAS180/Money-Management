@@ -17,3 +17,13 @@ with st.form("transaction_form"):
          st.session_state['transactions'] =pd.concat([st.session_state[ 'transactions'], new_row], ignore_index=True)
 st.write("### Transactions")
 st.dataframe(st.session_state['transactions'])
+st.write("### Financial Overview")
+
+if not st.session_state['transactions'].empty:
+    total_income = st.session_state['transactions'].loc[st.session_state['transactions']['Amount'] > 0, 'Amount'].sum()
+    total_expense = st.session_state['transactions'].loc[st.session_state['transactions']['Amount'] < 0, 'Amount'].sum()
+    net_balance = total_income + total_expense
+
+    st.metric("Total Income", f"${total_income:,.2f}")
+    st.metric("Total Expenses", f${total_expense:,.2f}")
+    st.metric("Net Balance", f${net_balance:,.2f}")
