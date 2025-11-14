@@ -6,16 +6,16 @@ function App() {
     <div>
         <div class="container">
           <div class="header">
-          <div class="title-bar">
-            <h1 className='title'>Money Management</h1>
-          </div>
-          <div class="topnav">
+            <div class="topnav">
             <nav>
               <ul>
                   <a href="#Home">Home</a>
                   <a href="#Contact">Contact</a>
               </ul>
             </nav>
+          </div>
+          <div class="title-bar">
+            <h1 className='title'>Money Management</h1>
           </div>
         </div>
 

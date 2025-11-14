@@ -40,9 +40,7 @@
     padding : 20px;
 }
 
-.step-1,
-.step-2,
-.step-3{
+.step-1,.step-2,.step-3{
     background-color: #D6A840;
     border-left: 4px solid #D6A840;
     border-bottom: 4px solid #D6A840;
