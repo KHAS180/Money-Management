@@ -18,7 +18,7 @@ function App() {
                 </ul>
               </nav>
             </div>
-            <div class="title-bar">
+             <div class="title-bar">
                 <h1 className='title'>Money Management</h1>
             </div>
         </div>
